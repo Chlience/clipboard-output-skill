@@ -15,6 +15,10 @@
   <img alt="License" src="https://img.shields.io/badge/License-MIT-blue" />
 </p>
 
+<p align="center">
+  <img alt="Clipboard Output Skill demo" src="./demo/clipboard-output-demo.gif" />
+</p>
+
 ---
 
 ## What is Clipboard Output Skill?
@@ -121,6 +125,10 @@ Run from the repository root:
 PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover \
   -s skills/clipboard-output/tests \
   -p 'test_*.py'
+
+PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover \
+  -s tests \
+  -p 'test_*.py'
 ```
 
 Parse the helper script without writing `__pycache__` files:
@@ -142,3 +150,4 @@ python3 skills/clipboard-output/scripts/copy_text.py \
 - [Skill instructions](skills/clipboard-output/SKILL.md)
 - [Clipboard helper](skills/clipboard-output/scripts/copy_text.py)
 - [Unit tests](skills/clipboard-output/tests/test_copy_text.py)
+- [Demo renderer](demo/README.md)

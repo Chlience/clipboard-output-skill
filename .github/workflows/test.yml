@@ -14,5 +14,9 @@ jobs:
           python-version: "3.12"
       - name: Run unit tests
         run: PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s skills/clipboard-output/tests -p 'test_*.py'
+      - name: Run demo renderer tests
+        run: PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -p 'test_*.py'
       - name: Parse helper script
         run: python3 -B -c "import ast, pathlib; ast.parse(pathlib.Path('skills/clipboard-output/scripts/copy_text.py').read_text())"
+      - name: Parse demo renderer
+        run: python3 -B -c "import ast, pathlib; ast.parse(pathlib.Path('demo/render_demo.py').read_text())"

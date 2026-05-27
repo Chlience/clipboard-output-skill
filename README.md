@@ -47,6 +47,22 @@ The boundary is intentional: the skill helps decide what should go on the clipbo
 
 ## Quick Start
 
+### Agent-assisted installation
+
+If your coding agent supports installing skills from a GitHub URL, you can give it this repository URL and ask it to install the skill:
+
+```text
+https://github.com/Chlience/clipboard-output-skill
+```
+
+Example prompt:
+
+```text
+Install the Codex skill from https://github.com/Chlience/clipboard-output-skill
+```
+
+### Manual installation
+
 Install as a Codex personal skill:
 
 ```bash
